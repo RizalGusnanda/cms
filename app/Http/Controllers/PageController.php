@@ -1,8 +1,8 @@
 <?php
 namespace App\Http\Controllers;
-use Illuminate\Http\Requeest;
+use Illuminate\Http\Request;
 
-class PageController extends Controllers
+class PageController extends Controller
 {
     public function index(){
         echo "Hi! Selamat Datang di Website Laravel";
