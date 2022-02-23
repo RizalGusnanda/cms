@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+//Praktikum 1
 Route::get('/', function () {
-    return view('welcome');
+    return "Hi! Selamat Datang di Website Laravel";
+});
+
+Route::get('/about', function () {
+    return "
+    NIM     : 2041720015
+    Nama    : Muchamad Rizal Gusnanda Atmaja
+    Kelas   : TI - 2G";
+});
+
+Route::get('/articles/{id}', function ($id) {
+    return "Ini adalah halaman Artikel dengan id " . $id;
 });
