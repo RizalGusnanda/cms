@@ -17,17 +17,23 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 //Praktikum 1
-Route::get('/', function () {
-    return "Hi! Selamat Datang di Website Laravel";
-});
+// Route::get('/', function () {
+//     return "Hi! Selamat Datang di Website Laravel";
+// });
 
-Route::get('/about', function () {
-    return "
-    NIM     : 2041720015
-    Nama    : Muchamad Rizal Gusnanda Atmaja
-    Kelas   : TI - 2G";
-});
+// Route::get('/about', function () {
+//     return "
+//     NIM     : 2041720015
+//     Nama    : Muchamad Rizal Gusnanda Atmaja
+//     Kelas   : TI - 2G";
+// });
 
-Route::get('/articles/{id}', function ($id) {
-    return "Ini adalah halaman Artikel dengan id " . $id;
-});
+// Route::get('/articles/{id}', function ($id) {
+//     return "Ini adalah halaman Artikel dengan id " . $id;
+// });
+
+//Praktikum 2
+//nomer 2
+Route::get('/', [PageController::class, 'index']);
+Route::get('/about', [PageController::class, 'about']);
+Route::get('/articles/{id}', [PageController::class, 'articles']);
