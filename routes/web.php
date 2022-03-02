@@ -99,3 +99,9 @@ use App\Http\Controllers\ArticleController;
 Route::get('/', function(){
     return view('home');
 });
+Route::get('/contact-us', function(){
+    return view('contact');
+});
+Route::get('/team', function(){
+    return view('team');
+});
