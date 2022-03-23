@@ -7,6 +7,6 @@ use App\Models\Post;
 class PrakController extends Controller
 {
     public function index(){
-        return view('home', ['Posts'=> Post::index()]);
+        return view('index', ['Posts'=> Post::index()]);
     }
 }

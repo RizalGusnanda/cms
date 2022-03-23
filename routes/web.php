@@ -98,9 +98,14 @@ use App\Http\Controllers\PrakController;
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [PrakController::class, 'index']);
-Route::get('/contact-us', function(){
-    return view('contact');
-});
-Route::get('/team', function(){
-    return view('team');
-});
+// Route::get('/contact-us', function(){
+//     return view('contact');
+// });
+// Route::get('/team', function(){
+//     return view('team');
+// });
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
